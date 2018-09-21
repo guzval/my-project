@@ -1,15 +1,24 @@
 <template>
  <main>
    <v-app>
-     <router-view/>
+      <v-content>
+        <guest-navigation />
+        <v-container class="mt-3 mb-3">
+          <router-view/>
+        </v-container>
+      </v-content>
    </v-app>
  </main>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import GuestNavigation from '@/navigations/guest';
+  export default {
+    components:{
+      GuestNavigation
+    },
+    name: 'App'
+  }
 </script>
 
 <style>
