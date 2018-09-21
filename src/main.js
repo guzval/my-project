@@ -25,5 +25,20 @@ new Vue({
   i18n,
   store,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  mounted() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        db.collection('users').doc(user.uid).onSnapshot(snapshot => {
+          store.commit('setUser', user);
+          if (snapshot.exists){
+            store.commit('setRole', snapshot.data().role);
+          }
+          store.commit('setLoaded', true);
+        })
+      } else {
+        store.commit('setLoaded', true);
+      }
+    })
+  },
 })
