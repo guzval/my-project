@@ -1,14 +1,9 @@
 <template>
     <div>
-
-        <auth-form
-          action="register"
-          v-on:process="register($event)"
-        />
-
+        <auth-form action="register" v-on:process="register($event)"/>
         <app-snack-bar
             v-if="snackBar"
-            :snack-bar="snackBar"
+            :snackBar="snackBar"
             :text="message"
             :timeout="timeout"
         />

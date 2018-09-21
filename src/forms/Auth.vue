@@ -14,6 +14,7 @@
 
         <v-form id="nativeForm" v-model="valid">
             <v-text-field
+                autocomplete="off"
                 :label="$t('auth.email')"
                 v-model="email"
                 :rules="emailRules"
@@ -29,6 +30,7 @@
             />        
 
              <v-text-field
+                v-if="action === 'register'"
                 :label="$t('auth.password_confirmation')"
                 v-model="password_confirmation"
                 :rules="passwordConfirmationRules"
