@@ -68,8 +68,10 @@
 </template>
 
 <script>
+import navigationMixin from '@/mixins/navigation';
 export default {
   name: "guest",
+  mixins: [navigationMixin],
   data() {
     return {
       drawer: false,
@@ -79,6 +81,14 @@ export default {
         { title: this.$t("navigation.register"), icon: "account_circle", to: "/register"}
       ]
     };
+  },
+  methods:{
+    toggleDrawer () {
+        this.drawer = !this.drawer;
+    },
+    logout () {
+        
+    }      
   }
 };
 </script>
