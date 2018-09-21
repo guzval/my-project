@@ -21,7 +21,7 @@ export default {
         setUser: (state, user) => {
             if (user) {
                 state.user = {
-                    uid: userCredential.user.uid,
+                    uid: user.uid,
                     email: user.email
                 };
                 state.logged = true;  
