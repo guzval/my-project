@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 Vue.use (Vuex);
 
 import authModule from '@/modules/auth';
+import usersModule from '@/modules/users';
 
 export default new Vuex.Store({
     state: {
@@ -30,6 +31,7 @@ export default new Vuex.Store({
         }
     },
     modules: {
-        authModule
+        authModule,
+        usersModule
     }
 })
