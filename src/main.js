@@ -12,6 +12,8 @@ export const db = firebase.firestore();
 
 import i18n from '@/config/i18n';
 
+import store from '@/store';
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -19,6 +21,7 @@ new Vue({
   el: '#app',
   router,
   i18n,
+  store,
   components: { App },
   template: '<App/>'
 })
