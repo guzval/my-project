@@ -7,7 +7,6 @@
             :text="message"
             :timeout="timeout"
         />
-        
     </div>
 </template>
 

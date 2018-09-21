@@ -16,9 +16,7 @@
     import {db} from '@/main';
     export default {
         name: "Login",
-        components:{
-            AuthForm, AppSnackBar
-        },
+        components:{AuthForm, AppSnackBar},
         data () {
             return {
                 snackBar: false,
