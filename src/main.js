@@ -14,6 +14,8 @@ import i18n from '@/config/i18n';
 
 import store from '@/store';
 
+require('./config/vuetify')
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
