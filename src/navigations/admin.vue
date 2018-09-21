@@ -72,16 +72,8 @@ export default {
         { title: this.$t("navigation.home"), icon: "home", to: "/" },
         { title: this.$t("navigation.shop"), icon: "shopping_basket", to: "/shop"}
       ]
-    };
-  },
-  methods:{
-    toggleDrawer () {
-        this.drawer = !this.drawer;
-    },
-    logout () {
-        
-    }      
+    }
   }
-};
+}
 </script>
 
