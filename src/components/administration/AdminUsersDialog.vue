@@ -122,7 +122,7 @@
             }
         },
         computed: {
-            userDialog: {
+            usersDialog: {
                 get() {
                     return this.$store.getters.usersDialog;
                 },

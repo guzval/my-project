@@ -30,6 +30,13 @@
 
             </v-navigation-drawer>
         </v-flex>
+
+        <v-flex xs12 sm9 style="margin-left: 15px">
+
+            <router-view />
+
+        </v-flex>
+
     </v-layout>
 </template>
 

@@ -19,7 +19,7 @@ export default{
         usersDialog: (state) => {
             return state.dialog;
         },
-        usersForEdit: (state) => {
+        userForEdit: (state) => {
             return state.user;
         },
         usersDialogEditMode: (state) => {
